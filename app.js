@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    // Обработчик для клика и касания по ссылкам с атрибутом data-scroll
-    $('a[data-scroll]').on('click touchstart', function(e) {
+    // Обработчик для клика по ссылкам с атрибутом data-scroll
+    $('a[data-scroll]').on('click', function(e) {
         e.preventDefault(); // Предотвращение стандартного поведения ссылки
         var targetId = $(this).attr('data-scroll');
         var targetOffset = $(targetId).offset().top;
