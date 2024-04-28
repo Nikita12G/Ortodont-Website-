@@ -1,0 +1,404 @@
+:root {
+    --black: #2b2a2c;
+    --grey: #6a696b;
+    --grey-light: #dedede;
+    --white: #ffffff;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: black;
+
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.header {
+    padding: 1.2rem 0;
+    position: relative;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user {
+    display: flex;
+}
+
+.user_content {
+    padding-left: 9px;
+}
+
+.user_name {
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.user_prof {
+    font-size: 0.75rem;
+    color: var(--black);
+    opacity: 0.7;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+
+.nav_link {
+    margin-left: 2rem;
+    position: relative;
+
+    font-size: 0.9rem;
+    color: var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    border-bottom: 2px solid black;
+    padding: 0 0 4px;
+}
+
+.intro_iner {
+    display: flex;
+    padding-top: 6.6rem;
+    padding-bottom: 5rem;
+    position: relative;
+
+    border-bottom: 1px solid black;
+}
+
+.intro_subtitle {
+    color: var(--black);
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.intro_title {
+    color: var(--black);
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.intro_text {
+    color: var(--black);
+    font-size: 1.2rem;
+    opacity: 0.7;
+}
+
+.sicial {
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+}
+
+.sicial_link {
+    margin-right: 0.75rem;
+    text-decoration: none;
+}
+
+.sicial_link:hover {
+    transform: translateY(-5px);
+}
+
+.intro_photo {
+    position: absolute;
+    bottom: 10px;
+    right: 1px;
+    z-index: 1;
+    border-radius: 15px;
+    height: 450px;
+}
+
+.work_photo {
+    height: 220px;
+    width: 357px;
+    border-radius: 10px;
+}
+
+.text_center {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+
+    font-size: 2.7rem;
+    color: var(--black);
+    font-weight: bold;
+}
+
+.works {
+    margin-bottom: 5rem;
+}
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.work {
+    overflow: hidden;
+    box-shadow: 0 0 4px black;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.work:hover {
+    box-shadow: 0 0 25px black;
+}
+
+.work_content {
+    padding: 1rem 0.8rem;
+    text-align: center;
+}
+
+.work_cat {
+    font-size: 0.9rem;
+    color: var(--black);
+    margin-bottom: 0.4rem;
+    text-align: center;
+}
+
+.work_title {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: bold;
+    text-align: center;
+}
+
+.about_foto {
+    border-radius: 15px;
+    max-width: 50%;
+}
+
+.about_iner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 7rem;
+}
+
+.about_content {
+    width: 50%;
+    margin-top: 5rem;
+    padding-left: 7.5rem;
+}
+
+.about_title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.about_text {
+    margin-top: 2.5rem;
+    margin-bottom: 3.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--grey);
+}
+
+.footer {
+    padding: 1rem 0;
+    background-color: #2b2a2c;
+}
+
+.footer_iner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_info {
+    display: flex;
+    align-items: center;
+}
+
+.footer_copyright {
+    font-size: 0.8rem;
+    color: #ffffff;
+
+    padding-right: 1rem;
+    margin-right: 1rem;
+
+    border-right: 1px solid #ffffff;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer_link {
+    margin-right: 1rem;
+    text-decoration: none;
+}
+
+.footer_nav {
+    display: flex;
+    align-items: center;
+}
+
+.footer_nav_link {
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: var(--white);
+}
+
+
+@media(max-width: 1199px) {
+
+    .intro {
+        margin-top: -4.5rem;
+    }
+
+    .intro_photo {
+        height: 350px;
+        position: absolute;
+        margin-left: 1rem;
+    }
+
+    .intro_iner {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        padding: 5rem 0;
+    }
+
+    .work {
+        flex-basis: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .work_photo {
+        height: 80%;
+        width: 80%;
+    }
+
+    .about_foto {
+        width: 100%;
+        height: 100%;
+    }
+
+    .about_content {
+        margin-top: 0rem;
+        padding: 0 2rem;
+    }
+
+    .about_text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 756px) {
+    .user {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+
+        width: 100%;
+        border-bottom:  1px solid black;
+        padding-bottom: 1rem;
+    }
+
+    .nav_link {
+        font-size: 0.7rem;
+    }
+
+    .intro_photo {
+        position: relative;
+    }
+
+    .intro_title {
+        font-size: 2.2rem;
+    }
+
+    .text_center {
+        margin: 1rem auto;
+    }
+
+    .intro_iner {
+        padding: 5rem 0 1rem 0 ;
+    }
+
+    .text_center {
+        font-size: 2.2rem;
+    }
+
+    .works {
+        margin-bottom: 2rem;
+    }
+
+    .about_iner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about_foto {
+        min-width: 100%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    .about_content {
+        margin-top: 3rem;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .footer_nav {
+        display: none;
+    }
+
+    .work_cat, .work_title {
+        font-size: 0.7rem;
+    }
+}
