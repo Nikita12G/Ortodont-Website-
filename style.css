@@ -335,21 +335,13 @@ h6 {
 }
 
 @media (max-width: 756px) {
-    .user {
+
+    .nav {
         display: none;
     }
 
-    .nav {
-        display: flex;
-        justify-content: space-around;
-
-        width: 100%;
-        border-bottom:  1px solid black;
-        padding-bottom: 1rem;
-    }
-
-    .nav_link {
-        font-size: 0.7rem;
+    .intro_iner {
+        padding: 0px;
     }
 
     .intro_photo {
